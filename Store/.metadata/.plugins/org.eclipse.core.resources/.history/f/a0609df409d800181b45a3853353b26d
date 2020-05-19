@@ -1,0 +1,40 @@
+package prob1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StoreTest {
+
+	Store store1 = new Store();
+	Store store2 = new Store();
+	Store store3 = new Store();
+
+	
+	@Test
+	void testAddEmp() {
+		
+		//Test for no employees
+		int value1 = 0;
+		assertEquals(value1, store1.getNumEmps());
+		
+		
+		//Testing add 1 employee
+		Employee e1 = new Employee("Levi", 5.0);
+		int value2 = 1;
+		store2.addEmp(e1);
+		assertEquals(value2, store2.getNumEmps());
+
+		//Testing all 20 employees are added
+		
+		
+		
+		//Testing more than 20 employees are added
+	}
+
+	@Test
+	void testRemoveEmployee() {
+		
+	}
+
+}

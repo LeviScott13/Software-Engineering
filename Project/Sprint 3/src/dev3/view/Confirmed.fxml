@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev3.view.Main">
+   <top>
+      <HBox alignment="CENTER" prefHeight="37.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Confirmation Page">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <Button mnemonicParsing="false" onMouseClicked="#goHome" prefWidth="150.0" text="Home" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </bottom>
+         <center>
+            <Label text="You have joined the group" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </center>
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+      </BorderPane>
+   </center>
+</BorderPane>

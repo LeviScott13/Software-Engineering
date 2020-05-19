@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev3.view.Main">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Returning User">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="150.0" layoutY="14.0" prefHeight="331.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <GridPane alignment="CENTER" vgap="20.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.0" minWidth="10.0" prefWidth="261.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Username">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Label text="Email Address" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <TextField fx:id="returningScreenName" style="-fx-background-radius: 10;" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></TextField>
+                                    <TextField fx:id="returningEmail" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></TextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </GridPane>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onMouseClicked="#signIn" prefWidth="100.0" text="Sign In" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="New User">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="172.0" layoutY="31.0" prefHeight="331.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <GridPane alignment="CENTER" vgap="20.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="80.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="298.0" minWidth="10.0" prefWidth="260.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <Label text="First Name">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Label text="Last Name" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Label text="Screen name" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Label text="Email Address" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <TextField fx:id="firstName" style="-fx-background-radius: 10;" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></TextField>
+                                    <TextField fx:id="lastName" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></TextField>
+                                    <TextField fx:id="screenName" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></TextField>
+                                    <TextField fx:id="email" style="-fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></TextField>
+                                 </children>
+                              </GridPane>
+                              <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="10.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onMouseClicked="#addMember" prefWidth="100.0" text="Join">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

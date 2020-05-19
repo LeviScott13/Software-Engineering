@@ -1,0 +1,25 @@
+#Memeber Constructor
+
+FirstName:
+	noText.			[error]
+	onlySpaces.		[error]
+	normalText.
+	nonPrintableCharacters.	[error]
+
+LastName:
+	noText.			[error]
+	onlySpaces.		[error]
+	normalText.
+	nonPrintableCharacters.	[error]
+
+ScreenName:
+	noText.			[error]
+	onlySpaces.		[error]
+	normalText.
+	nonPrintableCharacters.	[error]
+
+Email:
+	noText.			[error]
+	onlySpaces.		[error]
+	normalText.
+	nonPrintableCharacters.	[error]

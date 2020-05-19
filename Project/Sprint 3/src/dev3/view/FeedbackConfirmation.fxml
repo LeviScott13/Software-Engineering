@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="dev3.view.Main">
+   <top>
+      <BorderPane prefHeight="62.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label text="Confirmation page" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#goHome" text="Return Home" />
+            <Button mnemonicParsing="false" onMouseClicked="#goToSearchResults" text="Search Question " />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Your Feed back has been added to the Question" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

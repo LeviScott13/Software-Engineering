@@ -1,0 +1,86 @@
+package prob1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StoreTest {
+
+	Store store1 = new Store();
+	Store store2 = new Store();
+	Store store3 = new Store();
+
+	
+	@Test
+	/*void testAddNoEmp() {
+		//Test for no employees
+		int value = 0;
+		assertEquals(value, store1.getNumEmps());
+	}
+	void testAddOneEmp(){
+		
+		//Testing add 1 employee
+		Employee e1 = new Employee("a", 5.0);
+		int value = 1;
+		store2.addEmp(e1);
+		assertEquals(value, store2.getNumEmps());
+	}*/
+	void testAllEmployees(){
+		
+		//Testing all 20 employees are added
+		Employee e1 = new Employee("a", 5.0);
+		Employee e2 = new Employee("b", 5.0);
+		Employee e3 = new Employee("c", 5.0);
+		Employee e4 = new Employee("d", 5.0);
+		Employee e5 = new Employee("e", 5.0);
+		Employee e6 = new Employee("f", 5.0);
+		Employee e7 = new Employee("g", 5.0);
+		Employee e8 = new Employee("h", 5.0);
+		Employee e9 = new Employee("i", 5.0);
+		Employee e10 = new Employee("j", 5.0);
+		Employee e11 = new Employee("k", 5.0);
+		Employee e12 = new Employee("l", 5.0);
+		Employee e13 = new Employee("m", 5.0);
+		Employee e14 = new Employee("n", 5.0);
+		Employee e15 = new Employee("o", 5.0);
+		Employee e16 = new Employee("p", 5.0);
+		Employee e17 = new Employee("q", 5.0);
+		Employee e18 = new Employee("r", 5.0);
+		Employee e19 = new Employee("s", 5.0);
+		Employee e20 = new Employee("t", 5.0);
+		Employee e21 = new Employee("u", 5.0);
+		Employee e22 = new Employee("u", 5.0);
+
+		int value = 19;
+		
+		store3.addEmp(e1);
+		store3.addEmp(e2);
+		store3.addEmp(e3);
+		store3.addEmp(e4);
+		store3.addEmp(e5);
+		store3.addEmp(e6);
+		store3.addEmp(e7);
+		store3.addEmp(e8);
+		store3.addEmp(e9);
+		store3.addEmp(e10);
+		store3.addEmp(e11);
+		store3.addEmp(e12);
+		store3.addEmp(e13);
+		store3.addEmp(e14);
+		store3.addEmp(e15);
+		store3.addEmp(e16);
+		store3.addEmp(e17);
+		store3.addEmp(e18);
+		store3.addEmp(e19);
+		store3.addEmp(e20);
+		store3.addEmp(e21);
+		
+		assertEquals(value, store3.getNumEmps());
+	}
+
+	@Test
+	void testRemoveEmployee() {
+		
+	}
+
+}

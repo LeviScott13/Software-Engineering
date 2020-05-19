@@ -1,0 +1,27 @@
+package prob1;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class StoreTest {
+
+	Store store1 = new Store();
+	Store store2 = new Store();
+	Store store3 = new Store();
+
+	
+	@Test
+	void testAddEmp() {
+		Employee e1 = new Employee("Levi", 5.0);
+		int i = 1;
+		store1.addEmp(e1);
+		assertEquals(i, store1.getNumEmps());
+	}
+
+	@Test
+	void testRemoveEmployee() {
+		
+	}
+
+}

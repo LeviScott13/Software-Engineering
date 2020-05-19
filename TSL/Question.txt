@@ -1,0 +1,13 @@
+#Question Constructor
+
+#Question text
+noText. [error]
+onlySpaces. [error]
+normalText.
+nonPrintableCharacters. [error]
+
+#Question text
+noText. [error]
+onlySpaces. [error]
+normalText.
+nonPrintableCharacters. [error]

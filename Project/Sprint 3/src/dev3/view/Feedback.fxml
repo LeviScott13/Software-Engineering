@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev3.view.Main">
+   <top>
+      <BorderPane prefHeight="61.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <center>
+            <Label fx:id="FeedbackTitle" text="Add FeedBack" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#GlobalGoToQuestionDetails" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#FeedbackAddFeedback" text="Add Feedback">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TextArea fx:id="FeedbackTextField" onKeyTyped="#FeedbackAddFeedbackEnterKey" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </BorderPane.margin></TextArea>
+   </center>
+</BorderPane>

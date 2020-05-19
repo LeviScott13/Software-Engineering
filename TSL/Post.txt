@@ -1,0 +1,7 @@
+#Post Constructor
+
+#Post text
+noText. [error]
+onlySpaces. [error]
+normalText.
+nonPrintableCharacters. [error]

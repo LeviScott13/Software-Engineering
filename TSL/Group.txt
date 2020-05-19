@@ -1,0 +1,13 @@
+#Group Constructor
+
+#Group title
+noText. [error]
+onlySpaces. [error]
+normalText.
+nonPrintableCharacters. [error]
+
+#Group description
+noText. [error]
+onlySpaces. [error]
+normalText.
+nonPrintableCharacters. [error]

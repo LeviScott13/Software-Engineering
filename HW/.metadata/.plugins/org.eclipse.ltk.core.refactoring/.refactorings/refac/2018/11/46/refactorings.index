@@ -1,0 +1,6 @@
+1542079474365	Extract method 'isNumber'
+1542079510429	Extract method 'isString'
+1542079540884	Extract method 'assessOutput'
+1542079608228	Extract method 'errorCheck'
+1542079705221	Extract method 'assessPoints'
+1542079858588	Extract method 'assessOutput'

@@ -1,0 +1,96 @@
+# Test 1 Expected Results
+Martian.equals()
+5.0
+2
+r3.equals(g1)= false
+r3.equals(g4)= true
+# Test 2 Expected Results
+Martian.compareTo()
+5.0
+3
+r3.compareTo(g1)= -9
+r3.compareTo(g4)= 0
+r2.compareTo(g3)= 8
+# Test 3 Expected Results
+Martian.clone()
+5.0
+1
+m.getVolume()=44, mClone.getVolume()=77
+# Test 4 Expected Results
+MartianManager.addMartian()
+5.0
+3
+mm.addMartian(r1)=true, mm.addMartian(r2)=true, mm.addMartian(r3)=true
+mm.addMartian(g1)=true, mm.addMartian(g2)=true, mm.addMartian(g3)=true
+mm.addMartian(g4)=false
+# Test 5 Expected Results
+MartianManager.getMartianAt()
+5.0
+2
+mm.getMartianAt(2).getId()=2
+mm.getMartianAt(99)=null
+# Test 6 Expected Results
+MartianManager.getTeleporterAt()
+5.0
+2
+((GreenMartian)mm.getTeleporterAt(1)).getId()=4
+mm.getTeleporterAt(99)=null
+# Test 7 Expected Results
+MartianManager.getMartianWithId()
+5.0
+2
+mm.getMartianWithId(10).getId()=10
+mm.getMartianWithId(99)=null
+# Test 8 Expected Results
+MartianManager.getMartianClosestToId()
+5.0
+2
+mm.getMartianClosestToId(7).getId()=8
+mm.getMartianClosestToId(12).getId()=11
+# Test 9 Expected Results
+MartianManager.removeMartian()
+5.0
+3
+mm.removeMartian(18)=true, mm.getNumMartians()=5
+mm.removeMartian(99)=false, mm.getNumMartians()=5
+mm.removeMartian(4)=true, mm.getNumMartians()=4, mm.getNumTeleporters()=2
+# Test 10 Expected Results
+MartianManager.sortedMartians()
+5.0
+1
+mm.getMartianAt(0).getId()=8, mm.sortedMartians()= [2, 4, 8, 10, 11, 18]
+# Test 11 Expected Results
+MartianManager.obliterateTeleporters()
+5.0
+1
+mm.getNumTeleporters()=0
+# Test 12 Expected Results
+MartianManager.clone()
+5.0
+1
+mm.getMartianAt(0).getVolume()=1, mClone.getVolume()=999
+# Test 13 Expected Results
+Martian.toString()
+5.0
+4
+r1 contains id=8 = true
+r1 contains vol=1 = true
+g1 contains id=8 = true
+g1 contains vol=1 = true
+# Test 14 Expected Results
+MartianManager.groupSpeak()
+5.0
+2
+countsIds=[1, 1, 1, 1]
+countGs=4, countRs=4
+# Test 15 Expected Results
+MartianManager.Teleport("Orck")
+5.0
+2
+countsIds=[0, 0, 1, 1]
+count Orcks=2
+# Test 16 Expected Results
+MartianManager.getAverageId()
+5.0
+1
+%d 6.5 %tp 1.0 mm.getAverageId()=6.5
